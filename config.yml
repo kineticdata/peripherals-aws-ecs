@@ -1,10 +1,10 @@
 ---
 repo-name: peripherals-aws-ecs
 categories:
-- Cloud
-- DevOps
-display-name: 
+  - Cloud
+  - DevOps
+display-name: Amazon ECS
 manufacture: Amazon
 product: ECS
-description: 
-thumbnail: 
+description:
+thumbnail:
