@@ -1,10 +1,9 @@
 ---
 repo-name: peripherals-aws-ecs
 categories:
-- Cloud
-- DevOps
-display-name: 
-manufacture: Amazon
+  - Cloud
+  - DevOps
+display-name: Amazon ECS
+manufacturer: Amazon
 product: ECS
-description: 
-thumbnail: 
+description: Amazon Elastic Container Service (Amazon ECS) is a highly scalable, high-performance container orchestration service that supports Docker containers and allows you to easily run and scale containerized applications on AWS.
