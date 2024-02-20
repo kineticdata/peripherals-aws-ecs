@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.kineticdata.bridges.adapter</groupId>
     <artifactId>kinetic-bridgehub-adapter-amazonecs</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <packaging>jar</packaging>
 
     <name>kinetic-bridgehub-adapter-amazonecs</name>
@@ -14,31 +16,23 @@
 
     <distributionManagement>
         <repository>
-            <id>com.kineticdata.public</id>
+            <id>z1_com.kineticdata.public</id>
             <url>s3://maven-repo-public-kineticdata.com/releases</url>
         </repository>
         <snapshotRepository>
-            <id>com.kineticdata.public</id>
+            <id>z1_com.kineticdata.public</id>
             <url>s3://maven-repo-public-kineticdata.com/snapshots</url>
         </snapshotRepository>
     </distributionManagement>
 
+    <!-- 
+      repo ids are prefixed with z to control maven repo usage order.
+      We want maven central to be used first as most dependencies are stored there.
+    -->
     <repositories>
         <repository>
             <id>z1_com.kineticdata.public</id>
             <url>https://s3.amazonaws.com/maven-repo-public-kineticdata.com/releases</url>
-        </repository>
-        <repository>
-            <id>z2_com.kineticdata.private</id>
-            <url>s3://maven-repo-private-kineticdata.com/releases</url>
-        </repository>
-        <repository>
-            <id>z3_com.kineticdata.public</id>
-            <url>https://s3.amazonaws.com/maven-repo-public-kineticdata.com/snapshots</url>
-        </repository>
-        <repository>
-            <id>z4_com.kineticdata.private</id>
-            <url>s3://maven-repo-private-kineticdata.com/snapshots</url>
         </repository>
     </repositories>
 
