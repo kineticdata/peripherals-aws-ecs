@@ -14,23 +14,31 @@
 
     <distributionManagement>
         <repository>
-            <id>com.kineticdata</id>
-            <url>http://utilities.kineticdata.com/nexus/content/repositories/releases/</url>
+            <id>com.kineticdata.public</id>
+            <url>s3://maven-repo-public-kineticdata.com/releases</url>
         </repository>
         <snapshotRepository>
-          <id>com.kineticdata.snapshots</id>
-          <url>http://utilities.kineticdata.com/nexus/content/repositories/snapshots</url>
+            <id>com.kineticdata.public</id>
+            <url>s3://maven-repo-public-kineticdata.com/snapshots</url>
         </snapshotRepository>
     </distributionManagement>
 
     <repositories>
         <repository>
-          <id>com.kineticdata</id>
-          <url>http://utilities.kineticdata.com/nexus/content/repositories/releases/</url>
+            <id>z1_com.kineticdata.public</id>
+            <url>https://s3.amazonaws.com/maven-repo-public-kineticdata.com/releases</url>
         </repository>
         <repository>
-            <id>com.kineticdata.snapshots</id>
-            <url>http://utilities.kineticdata.com/nexus/content/repositories/snapshots/</url>
+            <id>z2_com.kineticdata.private</id>
+            <url>s3://maven-repo-private-kineticdata.com/releases</url>
+        </repository>
+        <repository>
+            <id>z3_com.kineticdata.public</id>
+            <url>https://s3.amazonaws.com/maven-repo-public-kineticdata.com/snapshots</url>
+        </repository>
+        <repository>
+            <id>z4_com.kineticdata.private</id>
+            <url>s3://maven-repo-private-kineticdata.com/snapshots</url>
         </repository>
     </repositories>
 
